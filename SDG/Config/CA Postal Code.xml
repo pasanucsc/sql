@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<generators>
+	<generator
+		type="RedGate.SQLDataGenerator.ExpressionGenerators.Regexp.RegexpGenerator"
+		name="Canadian Postal Code"
+		description="A0E8V6, R1S0G0, C4R6C3, S3A6V5, ..."
+		category="Geographical">
+
+		<property name="Expression">[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVXY][0-9]</property>
+
+		<matches field=".*PostalCode.*" score="60" minLen="5"/>
+		<matches field=".*Addr.*4" score="12" minLen="5"/>
+
+		<type type="string"/>
+	</generator>
+</generators>
